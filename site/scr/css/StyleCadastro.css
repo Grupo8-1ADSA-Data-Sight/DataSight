@@ -1,0 +1,14 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.negrito{
+    font-style: bold;
+}
+.navBar{
+    width: 100%;
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    align-items: center;
+     
+}
