@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataSight</title>
+    <link rel="stylesheet" href="../scr/css/home.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="../scr/css/assets/Logo PNG.png" alt="">
+            <p>DATASIGHT</p>
+        </div>
+        <div class="menu">
+            <p>HOME</p>
+            <p>SERVIÇOS</p>
+            <p>BLOG</p>
+            <p>CONTATO</p>
+            <p>BLOG</p>
+            <p>FAÇA <span class="negrito">LOGIN</span><br>
+                OU <span class="negrito">CADASTRE-SE</span></p>
+        </div>
+    </div>
+    <div class="hero">
+        <div class="hero-text">
+            <h1>MAXIMIZE E PROTEJA SEU DATA CENTER, COM NOSSA EXPERTISE!</h1>
+            <p>Somos especialistas em monitorar hardware de datacenters, garantindo desempenho e segurança. Com
+                tecnologia avançada e uma equipe dedicada, mantemos seus servidores operando sem interrupções.
+                Confie em nós para proteger o núcleo de sua operação digital.</p>
+            <div class="buttons">
+                <a class="button primary" href="">Contrate-nos</a>
+                <a class="button secondary" href="">Conheça mais</a>
+            </div>
+
+        </div>
+        <div class="blob-cont">
+            <div class="gif">
+                <img src="../scr/css/assets/Gif.gif" alt="">
+            </div>
+            <div class="blobs">
+                <div class="lightblue blob"></div>
+                <div class="lighterblue blob"></div>
+                <div class="blue blob"></div>
+            </div>
+        </div>
+    </div>
+
+    <svg>
+        <filter id='noiseFilter'>
+            <feTurbulence type='fractalNoise' baseFrequency='0.6' stitchTiles='stitch' />
+            <feColorMatrix in="colorNoise" type="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0" />
+            <feComposite operator="in" in2="SourceGraphic" result="monoNoise" />
+            <feBlend in="SourceGraphic" in2="monoNoise" mode="screen" />
+        </filter>
+    </svg>
+</body>
+
+</html>
