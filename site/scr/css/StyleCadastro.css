@@ -10,7 +10,7 @@
     --lightblue: #A7C8E7;
     --lighterblue: #D6EBFF;
     --blue: #3B5FE3;
-    --textWhite: #d6d6d6;
+    --textWhite: #ECF5FE;
 }
 
 body {
@@ -21,12 +21,13 @@ body {
     justify-content: flex-start;
     align-items: center;
     gap: 3em;
-    background-color: var(--bg);
-    margin: 0 10em;
+    background-color: aliceblue;
+    /* margin: 0 10em; */
 }
 
 /* navbar*/
-.navbar {
+/* .navbar {
+    height: 10%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -46,50 +47,50 @@ body {
     align-items: center;
     gap: 20px;
     font-weight: 300;
-}
-
-.negrito {
-    font-weight: bold;
-}
-
+} */
+/* 
 .menu {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
     gap: 3em;
-}
+} */
 
-.conteiner{
+
+.cadastro{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: space-between;
+    border-radius: 6px;
     align-items: center;
-    width: 80%;
-    margin: auto;
 }
+.box{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 
-ul{
-    margin: 0;
-    padding-top: 1.5%;
 }
-
+.imagemBoasVindas{
+    display: flex;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+}
+.pagCadastroImg{
+    width: 130vh;
+    height: auto;
+}
 h3{
     padding-top:5%;
     height:10%;
     margin: 0%;
 }
-
 .campo{
     height:5%;
-}
-
-.box{
-    height: 100%;
-    width: 60%;
-    background-color: aliceblue;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
 }
 
 input{    
@@ -103,9 +104,4 @@ input{
     width: 250px;
     height: 70px;
     font-size: 20px;
-}
-
-.footer{
-    height: 10%;
-    border-top: solid 2px;
 }
