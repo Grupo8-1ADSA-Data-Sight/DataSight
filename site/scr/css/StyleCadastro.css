@@ -2,28 +2,87 @@
 
 *{
     font-family: "Montserrat", sans-serif;
-    height: 100%;
-    padding: 0%;
 }
-.negrito{
-    font-weight: bold;
+
+:root {
+    --bg: #ECF5FE;
+    --text: #151515;
+    --lightblue: #A7C8E7;
+    --lighterblue: #D6EBFF;
+    --blue: #3B5FE3;
+    --textWhite: #ECF5FE;
 }
-.navbar{
+
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 3em;
+    background-color: aliceblue;
+    /* margin: 0 10em; */
+}
+
+/* navbar*/
+/* .navbar {
     height: 10%;
-    width: 100%;
     display: flex;
     flex-direction: row;
-    list-style: none;
-    border-bottom: solid 2px;
-}
-.conteiner{
+    justify-content: space-around;
     align-items: center;
-    width: 80%;
-    margin: auto;
+    width: 100%;
 }
-ul{
-    margin: 0;
-    padding-top: 1.5%;
+
+.navbar img {
+    width: 50px;
+    height: 50px;
+}
+
+.navbar .logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    font-weight: 300;
+} */
+/* 
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 3em;
+} */
+
+
+.cadastro{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: space-between;
+    border-radius: 6px;
+    align-items: center;
+}
+.box{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.imagemBoasVindas{
+    display: flex;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+}
+.pagCadastroImg{
+    width: 130vh;
+    height: auto;
 }
 h3{
     padding-top:5%;
@@ -33,28 +92,16 @@ h3{
 .campo{
     height:5%;
 }
-.box{
-    height: 100%;
-    width: 60%;
-    background-color: aliceblue;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 
-}
 input{    
     border-radius: 10px;
     width: 350px;
     height: 30px;
 }
+
 .botao{
     border-radius: 10px;
     width: 250px;
     height: 70px;
     font-size: 20px;
-}
-.footer{
-    height: 10%;
-    border-top: solid 2px;
 }

@@ -10,6 +10,7 @@
     --lightblue: #A7C8E7;
     --lighterblue: #D6EBFF;
     --blue: #3B5FE3;
+    --textWhite: #d6d6d6;
 }
 
 
@@ -22,7 +23,6 @@ body {
     align-items: center;
     gap: 3em;
     background-color: var(--bg);
-    /* font-family: "Recoleta"; */
     margin: 0 10em;
 }
 
@@ -257,7 +257,18 @@ body::before {
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 3em;
+    gap: 2em;
+    width: 1000px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    text-align: justify;
+    width: 90%;
+}
+
+.hero-text h1 {
+    font-size: 42px;
 }
 
 .buttons {
@@ -277,7 +288,7 @@ body::before {
 
 .primary {
     background-color: var(--text);
-    color: #DED3B6;
+    color: var(--textWhite);
 }
 
 @media only screen and (max-width: 1000px) {
