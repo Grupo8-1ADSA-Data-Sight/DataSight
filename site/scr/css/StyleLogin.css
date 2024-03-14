@@ -58,7 +58,7 @@ body {
 } */
 
 
-.cadastro{
+.Login{
     display: flex;
     height: 100%;
     width: 100%;
@@ -74,13 +74,13 @@ body {
     justify-content: space-between;
 
 }
-.imagemBoasVindas{
+.imagemLogin{
     display: flex;
     width: 60%;
     justify-content: center;
     align-items: center;
 }
-.pagCadastroImg{
+.pagLoginImg{
     width: 125vh;
     height: auto;
 }
@@ -104,5 +104,5 @@ input{
     width: 250px;
     height: 70px;
     font-size: 20px;
-    background-color: #85C4FF;
+    background-color: #A7F1D1;
 }
