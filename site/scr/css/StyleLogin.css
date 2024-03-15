@@ -21,7 +21,7 @@ body {
     justify-content: flex-start;
     align-items: center;
     gap: 3em;
-    background-color: aliceblue;
+    background-color: #EEFCF9;
     /* margin: 0 10em; */
 }
 
@@ -57,7 +57,9 @@ body {
     gap: 3em;
 } */
 
-
+.negrito{
+    font-weight: bolder;
+}
 .Login{
     display: flex;
     height: 100%;

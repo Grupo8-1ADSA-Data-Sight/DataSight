@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-*{
+* {
     font-family: "Montserrat", sans-serif;
 }
 
@@ -10,8 +10,9 @@
     --lightblue: #A7C8E7;
     --lighterblue: #D6EBFF;
     --blue: #3B5FE3;
-    --textWhite: #ECF5FE;
+    --textWhite: #d6d6d6;
 }
+
 
 body {
     height: 100vh;
@@ -21,13 +22,48 @@ body {
     justify-content: flex-start;
     align-items: center;
     gap: 3em;
-    background-color: aliceblue;
-    /* margin: 0 10em; */
+    background-color: #ECF5FE;
+    margin: 0 10em;
 }
 
+h1 {
+    font-size: 60px;
+    font-weight: normal;
+    margin: 0;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+p {
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body::before,
+body::after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: '';
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+
+    opacity: 40%;
+}
+
+body::before {
+    background: #ECF5FE;
+    filter: url(#noiseFilter);
+}
 /* navbar*/
-/* .navbar {
-    height: 10%;
+.navbar {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -47,64 +83,16 @@ body {
     align-items: center;
     gap: 20px;
     font-weight: 300;
-} */
-/* 
+}
+
+.negrito {
+    font-weight: bold;
+}
+
 .menu {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
     gap: 3em;
-} */
-
-.negrito{
-    font-weight: bolder;
-}
-.cadastro{
-    display: flex;
-    height: 100%;
-    width: 100%;
-    justify-content: space-between;
-    border-radius: 6px;
-    align-items: center;
-}
-.box{
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-
-}
-.imagemBoasVindas{
-    display: flex;
-    width: 60%;
-    justify-content: center;
-    align-items: center;
-}
-.pagCadastroImg{
-    width: 125vh;
-    height: auto;
-}
-h3{
-    padding-top:5%;
-    height:10%;
-    margin: 0%;
-}
-.campo{
-    height:5%;
-}
-
-input{    
-    border-radius: 10px;
-    width: 350px;
-    height: 30px;
-}
-
-.botao{
-    border-radius: 10px;
-    width: 250px;
-    height: 70px;
-    font-size: 20px;
-    background-color: #85C4FF;
 }
