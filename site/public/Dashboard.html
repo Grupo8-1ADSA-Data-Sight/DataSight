@@ -26,6 +26,19 @@
     <div class="box">
     <div class="grafico">
   <canvas id="myChart"></canvas>
+      <h2>Temperatura média das maquínas:</h2>
+      <h2>75º</h2>
+
+    </div>
+    <div class="grafico">
+    <canvas id="myChart02"></canvas>
+    <h2>Uso médio de CPU:</h2>
+    <h2>68%</h2>
+    </div>
+    <div class="grafico">
+      <canvas id="myChart03"></canvas>
+      <h2>Uso médio de RAM:</h2>
+      <h2 class="vermelho">83%</h2>
     </div>
     </div>
     
@@ -81,21 +94,62 @@
   const ctx = document.getElementById('myChart');
 
   new Chart(ctx, {
-    type: 'bar',
+    type: 'line',
     data: {
-      labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+      labels: ['10:20', '10:30', '10:40', '10:50', '11:00', '11:10'],
       datasets: [{
-        label: '# of Votes',
-        data: [12, 19, 3, 5, 2, 3],
+        label: 'CPU temperatura em Cº',
+        data: [45, 45, 45.6, 45.7, 45.8, 46],
         borderWidth: 1
       }]
     },
     options: {
       scales: {
         y: {
-          beginAtZero: true
+          beginAtZero: false
         }
       }
     }
   });
+  const ctx02 = document.getElementById('myChart02');
+
+new Chart(ctx02, {
+  type: 'line',
+  data: {
+    labels: ['10:00', '13:00', '16:00', '19:00', '21:00', '02:00'],
+    datasets: [{
+      label: 'Uso de CPU em %',
+      data: [70, 83, 80, 64, 78, 53],
+      borderWidth: 1
+    }]
+  },
+  options: {
+    scales: {
+      y: {
+        beginAtZero: true
+      }
+    }
+  }
+});
+const ctx03 = document.getElementById('myChart03');
+
+new Chart(ctx03, {
+  type: 'line',
+  data: {
+    labels: ['10:00', '13:00', '16:00', '19:00', '21:00', '02:00'],
+    datasets: [{
+      label: 'Uso de RAM em %',
+      data: [50, 65, 73, 50, 20, 12],
+      borderWidth: 1
+    }]
+  },
+  options: {
+    scales: {
+      y: {
+        beginAtZero: true
+      }
+    }
+    
+  }
+});
 </script>
