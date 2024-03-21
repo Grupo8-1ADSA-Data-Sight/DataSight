@@ -25,38 +25,6 @@ body {
     /* margin: 0 10em; */
 }
 
-/* navbar*/
-/* .navbar {
-    height: 10%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-}
-
-.navbar img {
-    width: 50px;
-    height: 50px;
-}
-
-.navbar .logo {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    gap: 20px;
-    font-weight: 300;
-} */
-/* 
-.menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 3em;
-} */
-
 .negrito{
     font-weight: bolder;
 }
@@ -108,3 +76,4 @@ input{
     font-size: 20px;
     background-color: #A7F1D1;
 }
+
